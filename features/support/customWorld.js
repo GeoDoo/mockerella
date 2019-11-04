@@ -1,4 +1,4 @@
-const { setWorldConstructor } = require('cucumber');
+const { setWorldConstructor, setDefaultTimeout } = require('cucumber');
 const puppeteer = require('puppeteer');
 
 function CustomWorld() {
@@ -7,3 +7,4 @@ function CustomWorld() {
 }
 
 setWorldConstructor(CustomWorld);
+setDefaultTimeout(10 * 1000);
