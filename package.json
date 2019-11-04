@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js"
+    "test": "cucumber-js --no-strict"
   },
   "keywords": [],
   "author": "George Karametas <geometas@hotmail.com> (http://geodoo.work/)",
   "license": "MIT",
   "devDependencies": {
-    "cucumber": "6.0.3"
+    "cucumber": "6.0.3",
+    "puppeteer": "2.0.0"
   }
 }

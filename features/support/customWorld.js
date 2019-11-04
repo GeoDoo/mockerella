@@ -1,7 +1,9 @@
 const { setWorldConstructor } = require('cucumber');
+const puppeteer = require('puppeteer');
 
 function CustomWorld() {
-    this.result = 0;
+    this.host = 'https://www.google.com';
+    this.driver = puppeteer;
 }
 
 setWorldConstructor(CustomWorld);
