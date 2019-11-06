@@ -8,7 +8,7 @@
     "test": "cucumber-js --no-strict"
   },
   "keywords": [],
-  "author": "George Karametas <geometas@hotmail.com> (http://geodoo.work/)",
+  "author": "George Karametas <geometas@hotmail.com> (https://geodoo.work/)",
   "license": "MIT",
   "devDependencies": {
     "cucumber": "6.0.3",
