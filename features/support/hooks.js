@@ -4,6 +4,7 @@ const interceptor = require('./interceptor');
 const logger = require('./logger')
 
 Before(async function () {
+    this.host = config.app.url;
     this.requestsToMock = [];
     this.browser = await this.driver.launch(config.puppeteer);
     this.page = await this.browser.newPage();
