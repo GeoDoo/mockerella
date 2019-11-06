@@ -5,9 +5,9 @@ const logger = require('./logger')
 
 Before(async function () {
     this.host = config.app.url;
-    this.requestsToMock = [];
     this.browser = await this.driver.launch(config.puppeteer);
     this.page = await this.browser.newPage();
+    this.requestsToMock = [];
     interceptor.startOn(this.page, this.requestsToMock, logger);
 });
 
@@ -23,10 +23,10 @@ After(async function () {
             logger.print(this.requestsToMock);
         }
 
+        this.requestsToMock = [];
+        
         await this.page.close();
         this.page = null;
-
-        this.requestsToMock = [];
 
         await this.browser.close();
         this.browser = null;
