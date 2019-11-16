@@ -1,4 +1,4 @@
-![](https://github.com/GeoDoo/mockerella/workflows/.github/workflows/nodejs.yml/badge.svg)
+![](https://github.com/GeoDoo/mockerella/workflows/Node%20CI/badge.svg)
 
 ## Mockerella
 
