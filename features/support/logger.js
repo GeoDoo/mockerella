@@ -1,8 +1,6 @@
-const config = require("../../config");
-
 module.exports = {
   record: function(interceptedRequest, requestsToMock) {
-    if (!interceptedRequest.url().includes(config.app.url)) {
+    if (interceptedRequest.resourceType() === 'fetch') {
       requestsToMock.push(interceptedRequest);
     }
   },
