@@ -1,8 +1,8 @@
-const { setWorldConstructor, setDefaultTimeout } = require('cucumber');
-const puppeteer = require('puppeteer');
+const { setWorldConstructor, setDefaultTimeout } = require("cucumber");
+const puppeteer = require("puppeteer");
 
 function CustomWorld() {
-    this.driver = puppeteer;
+  this.driver = puppeteer;
 }
 
 setWorldConstructor(CustomWorld);
