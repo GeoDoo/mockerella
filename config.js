@@ -7,6 +7,6 @@ module.exports = {
   },
   puppeteer: {
     headless: true,
-    slowMo: 0
+    args: ["--disable-web-security"] 
   }
 };
